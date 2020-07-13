@@ -1,0 +1,142 @@
+/* entire document*/
+body {
+    background-color: lightslategray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+
+/* header */
+
+header {
+    margin: 0px auto;
+    width: 960px;
+    background-color:darkslategrey;
+    height: 220px
+
+}
+
+h1 {
+    text-align: center;
+    color: white;
+
+}
+
+#werewolf {
+    width: 150px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+
+
+}
+
+#unicorn {
+    width: 150 px;
+    height: 200px;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right;
+
+}
+
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    margin-right: 100px;
+
+}
+
+header > nav {
+    /* float: center; */
+    margin-left: 170px;
+    padding: 50px;
+    
+}
+
+header > nav > ul > li {
+    display: inline-block;
+    width: 100px;
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    color: darkblue;
+    border-radius: 15px;
+    padding: 5px;
+
+}
+
+header > nav > ul > li > a {
+    color: inherit;
+}
+
+
+/* main */
+
+main {
+    background-color: darkslategrey;
+    width: 960px;
+    margin: 0px auto;
+    margin-top: 25px;
+    padding: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+main > article {
+    text-align: center;
+    width: 960px;
+    margin-left: 5px;
+}
+
+main > figure {
+    display: inline-block;
+    width: 230px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#troll { 
+    width: 300px;
+    height: 320px;
+    margin: center;
+
+}
+
+
+
+#wyvern {
+    width: 300px;
+    height: 300px;
+    margin: center;
+
+}
+
+#mermaid {
+    width: 300px;
+    height: 300px;
+    margin: center;
+
+}
+
+
+
+
+
+/* footer */
+
+footer {
+    background-color: darkslategray;
+    text-align: center;
+    margin: 0px auto;
+    width: 960px;
+
+}
+
+footer > p {
+    padding: 10px;
+}
