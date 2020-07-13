@@ -1,12 +1,19 @@
-var colour = prompt('What is your favorite colour?');
+var monster = prompt('What is your favorite type of monster? Dragon, unicorn, or maybe something else?');
 
-var colorAnswer;
-if (colour == 'green'){
-    colorAnswer = '  You are correct, you may pass!';
-} else if (colour == 'blue'){
-    colorAnswer = '  You are correct, you may pass!';
+var monsterAnswer;
+if (monster == 'dragon'){
+    monsterAnswer = ' Excellent choice! Dragons are the best!';
+} else if (monster == 'unicorn'){
+    monsterAnswer = 'Excellent choice! Unicorns are the cutest!';
 } else {
-    colorAnswer = '  Incorrect!  You should be cast into the Gorge of Eternal Peril, but you may pass anyway because I don\'t have a script for that';
+    monsterAnswer = 'Eh, I guess those are ok too';
 }
 
-document.write('You\'re favorite color is ' + colour + '.  ' + colorAnswer);
+document.write('You chose ' + monster + '. '+ monsterAnswer);
+
+
+
+
+
+
+
