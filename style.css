@@ -95,6 +95,7 @@ main > article {
 
 main > figure {
     display: inline-block;
+    vertical-align: top;
     width: 230px;
     text-align: center;
     margin-bottom: 5px;
@@ -102,7 +103,7 @@ main > figure {
 
 #troll { 
     width: 300px;
-    height: 320px;
+    height: 300px;
     margin: center;
 
 }
