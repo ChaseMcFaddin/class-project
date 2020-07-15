@@ -69,10 +69,47 @@ return document.write(seasonAnswer);
 
 // I want a blue potion that gives me super strength.
 
-function buildPotion(potionType, potionColor, potionEffect){
-    var message = 'I want a ' + potionColor + potionType + ' that gives me super ' + potionEffect + '!'
+//function buildPotion(potionType, potionColor, potionEffect){
+  //  var message = 'I want a ' + potionColor + potionType + ' that gives me super ' + potionEffect + '!'
 
-    return message;
+    //return message;
+// }
+
+
+function askPotion(){
+    var potion = prompt("Would you like a health or magic potion?");
+    var response;
+
+    while(potion !== 'health' && potion !== 'magic'){
+        potion = prompt('Please answer exactly! Health or magic?')        
+    }
+    if (potion === 'health'){
+        item = '<img src="images/102n46/health-potion.jpeg">';
+    } else if (potion === 'magic'){
+        item = '<img src="images/102n46/magic-potion.jpeg">';
+    }
+    
+    return item;
 }
 
+function getCount(){
+    var count = prompt('Super! How many potions would you like?');
+// (false || true) 
+    while (isNaN(count) || count === '')
+    count = prompt('Please answer with a number! How many potions?');
+
+    return count;
+}
+
+function showOrder(){
+    var result = '';
+    var itemType = askPotion();
+    var total = getCount();
+
+    for (var i = 0; i < total; i++){
+        result = result + '<p>' + itemType + '</p>';
+    }
+
+    return document.write(result);
+}
 
